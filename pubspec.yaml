@@ -22,6 +22,16 @@ flutter:
   uses-material-design: true
   assets:
     - assets/logoperhiasan.png
+    - assets/perhiasan1.jpg
+    - assets/perhiasan2.jpg
+    - assets/perhiasan3.jpg
+    - assets/perhiasan4.jpg
+    - assets/perhiasan5.jpg
+    - assets/perhiasan6.jpg
+    - assets/perhiasan7.jpg
+    - assets/perhiasan8.jpg
+    - assets/perhiasan9.jpg
+    - assets/perhiasan10.jpg
     # TODO: Add slanted menu asset (104)
     - packages/shrine_images/0-0.jpg
     - packages/shrine_images/1-0.jpg
