@@ -1,4 +1,4 @@
-name: shrine
+name: luxury
 description: Learn the basics of using Material Components by building a simple app with core components.
 
 environment:
@@ -21,7 +21,7 @@ flutter:
   # TODO: Insert Fonts (103)
   uses-material-design: true
   assets:
-    - assets/diamond.png
+    - assets/logoperhiasan.png
     # TODO: Add slanted menu asset (104)
     - packages/shrine_images/0-0.jpg
     - packages/shrine_images/1-0.jpg
