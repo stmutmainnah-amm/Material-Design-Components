@@ -19,6 +19,7 @@ dev_dependencies:
 
 flutter:
   # TODO: Insert Fonts (103)
+   # TODO: Add slanted menu asset (104)
   uses-material-design: true
   assets:
     - assets/logoperhiasan.png
@@ -32,42 +33,33 @@ flutter:
     - assets/perhiasan8.jpg
     - assets/perhiasan9.jpg
     - assets/perhiasan10.jpg
-    # TODO: Add slanted menu asset (104)
-    - packages/shrine_images/0-0.jpg
-    - packages/shrine_images/1-0.jpg
-    - packages/shrine_images/2-0.jpg
-    - packages/shrine_images/3-0.jpg
-    - packages/shrine_images/4-0.jpg
-    - packages/shrine_images/5-0.jpg
-    - packages/shrine_images/6-0.jpg
-    - packages/shrine_images/7-0.jpg
-    - packages/shrine_images/8-0.jpg
-    - packages/shrine_images/9-0.jpg
-    - packages/shrine_images/10-0.jpg
-    - packages/shrine_images/11-0.jpg
-    - packages/shrine_images/12-0.jpg
-    - packages/shrine_images/13-0.jpg
-    - packages/shrine_images/14-0.jpg
-    - packages/shrine_images/15-0.jpg
-    - packages/shrine_images/16-0.jpg
-    - packages/shrine_images/17-0.jpg
-    - packages/shrine_images/18-0.jpg
-    - packages/shrine_images/19-0.jpg
-    - packages/shrine_images/20-0.jpg
-    - packages/shrine_images/21-0.jpg
-    - packages/shrine_images/22-0.jpg
-    - packages/shrine_images/23-0.jpg
-    - packages/shrine_images/24-0.jpg
-    - packages/shrine_images/25-0.jpg
-    - packages/shrine_images/26-0.jpg
-    - packages/shrine_images/27-0.jpg
-    - packages/shrine_images/28-0.jpg
-    - packages/shrine_images/29-0.jpg
-    - packages/shrine_images/30-0.jpg
-    - packages/shrine_images/31-0.jpg
-    - packages/shrine_images/32-0.jpg
-    - packages/shrine_images/33-0.jpg
-    - packages/shrine_images/34-0.jpg
-    - packages/shrine_images/35-0.jpg
-    - packages/shrine_images/36-0.jpg
-    - packages/shrine_images/37-0.jpg
+    - assets/perhiasan11.jpg
+    - assets/perhiasan12.jpg
+    - assets/perhiasan13.jpg
+    - assets/perhiasan14.jpg
+    - assets/perhiasan15.jpg
+    - assets/perhiasan16.jpg
+    - assets/perhiasan17.jpg
+    - assets/perhiasan18.jpg
+    - assets/perhiasan19.jpg
+    - assets/perhiasan20.jpg
+    - assets/perhiasan21.jpg
+    - assets/perhiasan22.jpg
+    - assets/perhiasan23.jpg
+    - assets/perhiasan24.jpg
+    - assets/perhiasan25.jpg
+    - assets/perhiasan26.jpg
+    - assets/perhiasan27.jpg
+    - assets/perhiasan28.jpg
+    - assets/perhiasan29.jpg
+    - assets/perhiasan30.jpg
+    - assets/perhiasan31.jpg
+    - assets/perhiasan32.jpg
+    - assets/perhiasan33.jpg
+    - assets/perhiasan34.jpg
+    - assets/perhiasan35.jpg
+    - assets/perhiasan36.jpg
+    - assets/perhiasan37.jpg
+    - assets/perhiasan38.jpg
+    
+   
