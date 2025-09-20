@@ -22,6 +22,8 @@ flutter:
    # TODO: Add slanted menu asset (104)
   uses-material-design: true
   assets:
+    - assets/diamond.png
+    - assets/slanted_menu.png
     - assets/logoperhiasan.png
     - assets/perhiasan1.jpg
     - assets/perhiasan2.jpg

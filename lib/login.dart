@@ -4,7 +4,7 @@ class LoginPage extends StatefulWidget {
   const LoginPage({Key? key}) : super(key: key);
 
   @override
-  _LoginPageState createState() => _LoginPageState();
+  State<LoginPage> createState() => _LoginPageState();
 }
 
 class _LoginPageState extends State<LoginPage> {
@@ -14,33 +14,20 @@ class _LoginPageState extends State<LoginPage> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      backgroundColor: Color.fromARGB(255, 0, 0, 0),
+      backgroundColor: Colors.black,
       body: SafeArea(
         child: ListView(
           padding: const EdgeInsets.symmetric(horizontal: 24.0),
           children: <Widget>[
             const SizedBox(height: 24.0),
-
-            // Logo dan Judul
             Column(
               children: <Widget>[
-                Image.asset(
-                  'assets/logoperhiasan.png',
-                ),
+                Image.asset('assets/logoperhiasan.png'),
                 const SizedBox(height: 24.0),
-                const Text(
-                  '',
-                  style: TextStyle(
-                    fontSize: 26,
-                    fontWeight: FontWeight.bold,
-                  ),
-                ),
+                // Tulisan judul dihilangkan sesuai permintaan user
               ],
             ),
-
             const SizedBox(height: 8.0),
-
-            //Username
             TextField(
               controller: _usernameController,
               decoration: const InputDecoration(
@@ -49,10 +36,7 @@ class _LoginPageState extends State<LoginPage> {
                 labelText: 'Username',
               ),
             ),
-
             const SizedBox(height: 12.0),
-
-            //Password
             TextField(
               controller: _passwordController,
               decoration: const InputDecoration(
@@ -62,9 +46,7 @@ class _LoginPageState extends State<LoginPage> {
               ),
               obscureText: true,
             ),
-
             const SizedBox(height: 24.0),
-
             OverflowBar(
               alignment: MainAxisAlignment.center,
               spacing: 12.0,
@@ -81,11 +63,11 @@ class _LoginPageState extends State<LoginPage> {
                 ),
                 ElevatedButton(
                   onPressed: () {
-                    // TODO: Aksi kalau tombol NEXT ditekan
-                    Navigator.pop(context);
+                    Navigator.pushReplacementNamed(context, '/');
                   },
                   style: ElevatedButton.styleFrom(
                     foregroundColor: Colors.black,
+                    backgroundColor: Color(0xFFe4b730),
                   ),
                   child: const Text('NEXT'),
                 ),

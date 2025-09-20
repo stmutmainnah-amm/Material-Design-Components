@@ -13,9 +13,31 @@
 // limitations under the License.
 
 import 'package:flutter/material.dart';
-
 import '../model/product.dart';
 import 'product_card.dart';
+
+class OneProductCardColumn extends StatelessWidget {
+  const OneProductCardColumn({required this.product, Key? key})
+      : super(key: key);
+
+  final Product product;
+
+  @override
+  Widget build(BuildContext context) {
+    return ListView(
+      physics: const ClampingScrollPhysics(),
+      reverse: true,
+      children: <Widget>[
+        const SizedBox(
+          height: 40.0,
+        ),
+        ProductCard(
+          product: product,
+        ),
+      ],
+    );
+  }
+}
 
 class TwoProductCardColumn extends StatelessWidget {
   const TwoProductCardColumn({
@@ -35,13 +57,14 @@ class TwoProductCardColumn extends StatelessWidget {
 
       double heightOfCards = (constraints.biggest.height - spacerHeight) / 2.0;
       double heightOfImages = heightOfCards - ProductCard.kTextBoxHeight;
-      // TODO: Change imageAspectRatio calculation (104)
-      double imageAspectRatio = constraints.biggest.width / heightOfImages;
+      // Ubah perhitungan imageAspectRatio sesuai permintaan
+      double imageAspectRatio = heightOfImages >= 0.0
+          ? constraints.biggest.width / heightOfImages
+          : 49.0 / 33.0;
 
-      // TODO: Replace Column with a ListView (104)
-      return Column(
-        mainAxisAlignment: MainAxisAlignment.center,
-        crossAxisAlignment: CrossAxisAlignment.center,
+      // Ganti Column dengan ListView
+      return ListView(
+        physics: const ClampingScrollPhysics(),
         children: <Widget>[
           Padding(
             padding: const EdgeInsetsDirectional.only(start: 28.0),
@@ -65,28 +88,5 @@ class TwoProductCardColumn extends StatelessWidget {
         ],
       );
     });
-  }
-}
-
-class OneProductCardColumn extends StatelessWidget {
-  const OneProductCardColumn({required this.product, Key? key})
-      : super(key: key);
-
-  final Product product;
-
-  @override
-  Widget build(BuildContext context) {
-    // TODO: Replace Column with a ListView (104)
-    return Column(
-      mainAxisAlignment: MainAxisAlignment.end,
-      children: <Widget>[
-        ProductCard(
-          product: product,
-        ),
-        const SizedBox(
-          height: 40.0,
-        ),
-      ],
-    );
   }
 }
